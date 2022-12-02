@@ -1,0 +1,10 @@
+@media screen and (max-width: 769px) {
+  .menu__list {
+    display: none;
+  }
+
+  .menu__icon,
+  .menu__title {
+    display: inline-block;
+  }
+}

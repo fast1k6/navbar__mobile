@@ -1,0 +1,119 @@
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+/* @import url("/media.css"); */
+
+/* red: F06543; */
+
+/* Menu */
+
+.menu__icon {
+  display: none;
+}
+
+.menu__bars {
+  font-size: 2rem;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.menu__title {
+  display: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: #011627;
+  align-items: center;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: absolute;
+  transition: 0.3s all;
+  top: 70px;
+  left: -100%;
+}
+
+.sidebar__show {
+  left: 0;
+}
+
+/* List */
+
+.menu__list,
+.sudbur__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  transition: all 0.2s;
+}
+
+.menu__list {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.sudbur__list {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+/* Iten */
+
+.menu__item {
+  border-right: 1px solid #fff;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+  height: 70px;
+  line-height: 70px;
+}
+
+.menu__item:hover {
+  background: #f06543;
+}
+
+.menu__item:hover.menu__link {
+  background: #000;
+}
+
+.menu__item:last-child {
+  border-right: none;
+}
+
+.sidebar__item {
+  background: #f07167;
+  padding: 15px;
+  transition: 0.2s all;
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+}
+
+.sidebar__item:hover {
+  padding-left: 25px;
+}
+
+/* Link */
+
+.menu__link,
+.sidebar__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.menu__link {
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar__link {
+}
